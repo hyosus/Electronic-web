@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+/* ==== NAV BAR ==== */
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.logo {
+  float: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav {
+  display: flex;
+  margin: auto;
+  gap: 80px;
+}
+.nav-item {
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.active {
+  position: relative;
+  --bc: #262626;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background-color: var(--bc);
+  animation: fade 300ms ease-in-out forwards;
+}
+
+.icon-wrapper > img {
+  padding-left: 25px;
+}
+
+
+/* ==== MOBILE SECTION ==== */
+.section-1 {
+  width: 100%;
+  height: 620px;
+  /* background-color: #262626; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-item {
+  color: white;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.zflip {
+  max-width: 75%;
+  /* max-height: 30%; */
+}
+
+h1.heading {
+  font-weight:600;
+  text-align: right;
+  color: #262626;
+  /* padding-right: 20%; */
+}
+
+.grid-item > button {
+  float: right;
+  background-color: transparent;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  height: 58px;
+  width: 240px;
+  font-size: 1.4vh;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #262626;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.grid-item > button:hover {
+  box-shadow: inset 400px 0 0 0 #262626;
+  color: white;
+}
+
+h2.learn-more {
+  clear: right;
+  text-align: right;
+  font-weight: normal;
+  font-size: 1.8vh;
+  padding-top: 15px;
+  color: #2350F0;
+  padding-right: 1%;
+  cursor: pointer;
+
+}
