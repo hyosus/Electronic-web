@@ -13,6 +13,8 @@ a {text-decoration: none;}
   margin: auto;
 }
 
+a {color: #262626;}
+
 .App-link {
   color: #61dafb;
 }
@@ -26,6 +28,8 @@ ul {
 }
 
 li {font-size: 1.4vh;}
+
+li:active {color: #262626;}
 
 .navbar {
   position: relative;
