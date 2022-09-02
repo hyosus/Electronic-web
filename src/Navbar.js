@@ -22,14 +22,24 @@ const Navbar = () => {
       <nav>
         <ul
           className={
-            nav ? [styles.menu, styles.active].join(" ") : [styles.menu]
+            nav ? [styles.menu, styles.navActive].join(" ") : [styles.menu]
           }
         >
-          <NavLink to="/Mobile">Mobile</NavLink>
+          <li>
+            <NavLink to="/Mobile" onClick={() => setNav(!nav)}>
+              Mobile
+            </NavLink>
+          </li>
 
-          <NavLink to="/Smartwatch">Smartwatch</NavLink>
-          <NavLink to="/Computers">Computers</NavLink>
-          <NavLink to="/Support">Support</NavLink>
+          <li>
+            <NavLink to="/Smartwatch">Smartwatch</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Computers">Computers</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Support">Support</NavLink>
+          </li>
 
           <div className={styles.mobile_icons}>
             <AiOutlineSearch size={25} style={{ paddingRight: "1.5em" }} />
@@ -47,41 +57,6 @@ const Navbar = () => {
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
     </header>
-
-    // <header className="App-header">
-    //   <div className="navbar logo">
-    //     <NavLink to="/">
-    //       <h1 className="logo-text">EON</h1>
-    //     </NavLink>
-    //   </div>
-    //   <div class="navbar menu">
-    //     <ul class="main-nav">
-    // <NavLink to="/Mobile">Mobile</NavLink>
-
-    // <NavLink to="/Smartwatch">Smartwatch</NavLink>
-    // <NavLink to="/Computers">Computers</NavLink>
-    // <NavLink to="/Support">Support</NavLink>
-    //     </ul>
-    //     <div class="indicator"></div>
-    //   </div>
-    //   <div class="navbar icons">
-    //     <div className="icon-wrapper">
-    //       <img src={searchIcon}></img>
-    //     </div>
-
-    //     <div className="icon-wrapper">
-    //       <img src={shoppingCartIcon}></img>
-    //     </div>
-    //   </div>
-
-    //   <div cla ss="navbar hamburger" onClick={() => setNav(!nav)}>
-    //     {nav ? (
-    //       <AiOutlineClose size={30} />
-    //     ) : (
-    //       <AiOutlineMenu size="30px" className="hamburgerMenu" />
-    //     )}
-    //   </div>
-    // </header>
   );
 };
 

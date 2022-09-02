@@ -2,6 +2,7 @@ import styled from "styled-components";
 import twitter from "./Images/Twitter.svg";
 import ig from "./Images/Instagram.svg";
 import fb from "./Images/Fb.svg";
+import { NavLink } from "react-router-dom";
 
 const FooterBody = styled.footer`
   width: 100%;
@@ -93,23 +94,33 @@ const SocialsWrapper = styled(Cols)`
 `;
 
 const Socials = styled.div`
-height: 50px;
-width: 50px;
-background: #262626;
-border-radius: 100%;
-display: flex;
-align-items: center;
+  height: 50px;
+  width: 50px;
+  background: #262626;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
 
-&:hover{
-  cursor: pointer;
-  transition: all 0.4s ease;
-  background: rgba(142,102,227,0.5)
-}
-]`;
+  &:hover {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background: rgba(142, 102, 227, 0.5);
+  }
+
+  @media screen and (max-width: 720px) {
+    height: 40px;
+    width: 40px;
+  }
+`;
 
 const Icon = styled.img`
   height: 25px;
   width: 25px;
+
+  @media screen and (max-width: 720px) {
+    height: 20px;
+    width: 20px;
+  }
 `;
 
 const Footer = () => {
@@ -120,7 +131,9 @@ const Footer = () => {
           <Cols>
             <Title>Product</Title>
             <Ul>
-              <BodyLink>Mobile</BodyLink>
+              <NavLink to="/Mobile">
+                <BodyLink>Mobile</BodyLink>
+              </NavLink>
               <BodyLink>Tablet</BodyLink>
               <BodyLink>Smartwatch</BodyLink>
               <BodyLink>Computer</BodyLink>

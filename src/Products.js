@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 import zfold from "./Images/image 2.png";
 import zflip from "./Images/image 3.png";
@@ -11,18 +10,20 @@ import styled from "styled-components";
 const Body = styled.div`
   width: 100%;
   padding-bottom: 50px;
+  color: #262626;
 `;
 
 const Wrapper = styled.section`
   max-width: 1280px;
-  padding: 4em;
+  padding: 2em 0 4em 0;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 4em;
   justify-content: center;
 
   @media screen and (min-width: 600px) {
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 22rem));
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 60px;
   }
 `;
 
@@ -51,7 +52,12 @@ height 215px;
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
-  color: #262626;
+  padding-top: 2em;
+`;
+
+const SubTitle = styled.h2`
+  font-size: 1.2em;
+  max-width: 1280px;
 `;
 
 const CircleWrapper = styled.div`
@@ -153,6 +159,7 @@ const Products = () => {
 
   return (
     <Body>
+      <SubTitle>All mobile models</SubTitle>
       <Wrapper>{prodCards}</Wrapper>
       <AddButton onClick={handleClick}>Add a row 😃</AddButton>
     </Body>
