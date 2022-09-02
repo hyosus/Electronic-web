@@ -24,7 +24,7 @@ import {
   ZoomOut,
 } from "react-scroll-motion";
 
-const ZoomInScroll = batch(StickyIn(), FadeIn(), ZoomIn());
+const ZoomInScroll = batch(FadeIn());
 const ProductDetail = () => {
   return (
     <>

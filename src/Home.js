@@ -14,40 +14,40 @@ const Home = () => {
 
   return (
     <>
-      <section class="section home-1">
-        <div class="grid-item">
-          <img src={zflip} class="home-img"></img>
+      <section className="section home-1">
+        <div className="grid-item">
+          <img src={zflip} className="home-img"></img>
         </div>
-        <div class="grid-item">
-          <h1 class="heading">Unfold your world</h1>
+        <div className="grid-item">
+          <h1 className="heading">Unfold your world</h1>
           <button onClick={handleClick}>ORDER NOW</button>
           <Link to="ProductDetail">
-            <h2 class="learn-more">Learn more &gt;</h2>
+            <h2 className="learn-more">Learn more &gt;</h2>
           </Link>
         </div>
       </section>
 
-      <section class="section-home-2">
+      <section className="section-home-2">
         <div className="gridWrapper">
-          <div class="grid-item">
-            <img src={applewatch} class="home-img"></img>
+          <div className="grid-item">
+            <img src={applewatch} className="home-img"></img>
           </div>
-          <div class="grid-item home-2">
-            <h1 class="heading">Tap. Type. Swipe.</h1>
+          <div className="grid-item home-2">
+            <h1 className="heading">Tap. Type. Swipe.</h1>
             <button onClick={() => handleClickDynamic("🍣")}>ORDER NOW</button>
-            <h2 class="learn-more">Learn more &gt;</h2>
+            <h2 className="learn-more">Learn more &gt;</h2>
           </div>
         </div>
       </section>
 
-      <section class="section home-3">
-        <div class="grid-item">
+      <section className="section home-3">
+        <div className="grid-item">
           <img src={laptop} class="home-img"></img>
         </div>
-        <div class="grid-item">
-          <h1 class="heading">Power and Perfection</h1>
+        <div className="grid-item">
+          <h1 className="heading">Power and Perfection</h1>
           <button onClick={handleClick}>ORDER NOW</button>
-          <h2 class="learn-more">Learn more &gt;</h2>
+          <h2 className="learn-more">Learn more &gt;</h2>
         </div>
       </section>
     </>
