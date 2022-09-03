@@ -47,7 +47,7 @@ li a:hover {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 850px) {
   .icons {
     display: none;
   }
@@ -79,6 +79,14 @@ li a:hover {
     background-color: rgb(252, 252, 252);
     z-index: 10;
     transition: right 0.8s;
+  }
+
+  ul {
+    line-height: 5em;
+  }
+
+  li {
+    font-size: 1.5em;
   }
 
   .navActive {

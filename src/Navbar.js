@@ -42,15 +42,15 @@ const Navbar = () => {
           </li>
 
           <div className={styles.mobile_icons}>
-            <AiOutlineSearch size={25} style={{ paddingRight: "1.5em" }} />
-            <AiOutlineUser size={25} style={{}} />
+            <AiOutlineSearch size={30} style={{ paddingRight: "1.8em" }} />
+            <AiOutlineUser size={30} style={{}} />
           </div>
         </ul>
       </nav>
 
       <div className={styles.icons}>
-        <AiOutlineSearch size={25} style={{ paddingRight: "1.5em" }} />
-        <AiOutlineUser size={25} style={{}} />
+        <AiOutlineSearch size={30} style={{ paddingRight: "1.8em" }} />
+        <AiOutlineUser size={30} style={{}} />
       </div>
 
       <div className={styles.mobile_btn} onClick={() => setNav(!nav)}>

@@ -100,6 +100,7 @@ const Socials = styled.div`
   border-radius: 100%;
   display: flex;
   align-items: center;
+  box-shadow: 0px 3px 8px 1px #c1c1c1;
 
   &:hover {
     cursor: pointer;
