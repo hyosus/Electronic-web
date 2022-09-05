@@ -21,6 +21,10 @@ const Wrapper = styled.section`
   row-gap: 4em;
   justify-content: center;
 
+  @media screen and (max-width: 1279px) {
+    margin: 0 25px;
+  }
+
   @media screen and (min-width: 600px) {
     grid-template-columns: repeat(auto-fit, 300px);
     gap: 60px;
@@ -58,6 +62,10 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   font-size: 1.2em;
   max-width: 1280px;
+
+  @media screen and (max-width: 1279px) {
+    margin: 0 25px;
+  }
 `;
 
 const CircleWrapper = styled.div`

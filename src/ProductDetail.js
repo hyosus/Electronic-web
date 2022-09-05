@@ -54,6 +54,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  align-content: center;
 
   @media only screen and (max-width: 912px) {
     grid-template-columns: 1fr;
@@ -68,6 +69,10 @@ const GridImg = styled.img`
 
 const GridTitle = styled.h1`
   font-size: 4em;
+
+  @media screen and (max-width: 412px) {
+    font-size: 3em;
+  }
 `;
 
 const GridTitle2 = styled(GridTitle)`
